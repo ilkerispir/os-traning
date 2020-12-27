@@ -8,9 +8,9 @@ int main(){
 
     if(pid > 0)
     {
-        //parrent
+        //parent
         wait(NULL); //first child process will run
-        printf("parrent: %d, my pid: %d\n", pid, getpid());
+        printf("parent: %d, my pid: %d\n", pid, getpid());
     } else if(pid == 0){
         //child
         printf("child: %d, my pid: %d\n", pid, getpid());
